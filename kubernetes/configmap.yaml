@@ -10,11 +10,11 @@ data:
 
   # API URLs
   # NEXT_PUBLIC_BACKEND_API_URL is used by the browser-facing frontend.
-  NEXT_PUBLIC_BACKEND_API_URL: "https://jaiswal.shop"
+  NEXT_PUBLIC_BACKEND_API_URL: "https://resumatches.com"
 
   # BACKEND_API_URL is used for server-side requests from the Next.js server runtime.
   BACKEND_API_URL: "http://backend-service.resumatch-ai.svc.cluster.local:8090"
-  NEXT_PUBLIC_APP_URL: "https://jaiswal.shop"
+  NEXT_PUBLIC_APP_URL: "https://resumatches.com"
 
   # NIM Model Configuration (non-sensitive)
   NIM_MODEL_OCR: "nvidia/nemotron-ocr-v2"

@@ -8,8 +8,8 @@ spec:
   - name: resumatch-gateway
     sectionName: https
   hostnames:
-  - jaiswal.shop
-  - www.jaiswal.shop
+  - resumatches.com
+  - www.resumatches.com
   rules:
   - matches:
     - path:
@@ -29,8 +29,8 @@ spec:
   - name: resumatch-gateway
     sectionName: https
   hostnames:
-  - jaiswal.shop
-  - www.jaiswal.shop
+  - resumatches.com
+  - www.resumatches.com
   rules:
   - matches:
     - path:

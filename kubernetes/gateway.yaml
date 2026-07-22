@@ -34,8 +34,9 @@ spec:
   - name: resumatch-gateway
     sectionName: http
   hostnames:
-  - jaiswal.shop
-  - www.jaiswal.shop
+  - "grafana.resumatches.com"
+  - "resumatches.com"
+  - "prometheus.resumatches.com"
   rules:
   - filters:
     - type: RequestRedirect

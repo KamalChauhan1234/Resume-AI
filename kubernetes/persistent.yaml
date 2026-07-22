@@ -1,0 +1,23 @@
+prometheus:
+  prometheusSpec:
+    serviceMonitorNamespaceSelector: {} # Allows cross-namespace metrics scraping
+    storageSpec:
+      volumeClaimTemplate:
+        spec:
+          storageClassName: "standard-rwo" #  Updated for GKE Default Balanced PD
+          accessModes: ["ReadWriteOnce"]
+          resources:
+            requests:
+              storage: 10Gi
+
+grafana:
+  adminPassword: "Painkiller123" # Pre-defines a clean password on initial boot
+  persistence:
+    enabled: true
+    storageClassName: "standard-rwo" #  Updated for GKE Default Balanced PD
+    accessModes: ["ReadWriteOnce"]
+    size: 5Gi
+    skipCleanup: true
+  env:
+    GF_SERVER_ROOT_URL: "https://grafana.jaiswal.shop/"
+    GF_SERVER_SERVE_FROM_SUB_PATH: "false"
