@@ -1,6 +1,6 @@
 terraform {
   backend "gcs" {
-    bucket = "resume-terraform-state-01"
+    bucket = "resume-terraform-state-02"
     prefix = "dev-state"
   }
   required_providers {
